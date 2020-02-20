@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.keypad {
+  height: 55vh;
+  width: 100%;
+}
+
+.keypad__row {
+  height: 11vh;
+  /* (80vh calculator - 25vh screen) / 5 keypadRow components = 11vh */
+  width: 100%;
+  display: flex;
+  /* To control the dimension */
+}
+
+.btn {
+  width: 25%;
+  height: 100%;
+  font-family: inherit;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s;
+}
+
+.btn:hover {
+  color: #f9f9f9;
+  background-color: #d40640;
+}
+
+.btn:active {
+  transform: scale(.95);
+}
+
+.btn--large {
+  width: 50%;
+  color: #ffffff;
+  background-color: #d40640;
+  transition: all .2s;
+}
+
+.btn--large:hover {
+  background-color: #ffffff;
+  color: #d40640;
+}
